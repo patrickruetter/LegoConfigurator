@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.dg.main {
+    position: absolute;
+    top: 0;
+}
+.configuration {
+    width: 200px;
+    float: left;
+}
+.logo {
+    width: 100px;
+    display: block;
+    margin: 40px auto;
+}
+fieldset,
+.price-wrapper {
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+.visualisation {
+    left: 200px;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    right: 0;
+}
+.hidden {
+    display: none;
+}

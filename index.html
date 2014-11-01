@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Bed Configurator</title>
+    <style>canvas { width: 100%; height: 100% }</style>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="configuration">
+    <img src="img/logo.svg" class="logo" />
+    <form>
+        <fieldset>
+            <legend>Boat</legend>
+            <div>
+                <label for="boat-color-1">Color 1:</label>
+                <input type="color" name="boat-color-1" id="boat-color-1">
+            </div>
+            <div>
+                <label for="boat-color-2">Color 2:</label>
+                <input type="color" name="boat-color-2" id="boat-color-2">
+            </div>
+            <div>
+                <label for="boat-darkened-panes">Darkened Panes:</label>
+                <input type="range" name="boat-darkened-panes" id="boat-darkened-panes" min="0.2" max="0.8" step="0.05">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Character</legend>
+            <div>
+                <input type="checkbox" id="include-character">
+                <label for="include-character">Include Character</label>
+            </div>
+            <div class="character-color-wrapper hidden">
+                <label for="character-color">Color:</label>
+                <input type="color" name="character-color" id="character-color">
+            </div>
+        </fieldset>
+        <div class="price-wrapper">
+            Preis: <span class="price"></span>
+        </div>
+    </form>
+</div>
+<div class="visualisation"></div>
+<script src="js/three.min.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/dat.gui.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/ColladaLoader.js"></script>
+<script src="js/bedconfigurator.js"></script>
+</body>
+</html>
