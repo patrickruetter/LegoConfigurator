@@ -1,4 +1,4 @@
 LegoConfigurator
 ================
 
-LEGO Configurator with three.js for a school project
+Demo: http://legoconfigurator.patrickruetter.ch/
